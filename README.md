@@ -1,4 +1,4 @@
-# CPP_Multilayer-Perceptron
+# CPP_AlgorithmicTrading--Interpolation-Approximation
 
 ![image](materials/project-record.gif)
 
