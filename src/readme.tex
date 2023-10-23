@@ -1,0 +1,42 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\title{Algorithmic trading}
+\author{lkathary@student.21-school.ru, rglorfin@student.21-school.ru}
+\date{March 2023}
+
+\begin{document}
+\maketitle
+
+\section{Algorithmic trading}
+\begin{itemize}
+    \item The program was developed in C++ language of \textbf{C++17} standard using g++ (GNU C++) compiler.
+    \item GUI implementation, based on the \textbf{QT} library with API for \textbf{C++17}.
+    \item The program provides the ability to:
+        \begin{itemize}
+            \item Plot a tabulated function of stock quotes using two interpolation methods.
+            \begin{itemize}
+            \item Newton polynomial of \(n\)th degree (\(1 \leq n \leq 9\)).
+            \item Cubic Spline.
+        \end{itemize}
+    \item Plot an approximation (by a polynomial of \(m\)th degree (\(1 \leq m \leq 20\)))
+           of a tabulated function of stock quotes using the least squares method.
+           The approximation can also be extended to the future to predict the stock price.
+    \end{itemize}
+\end{itemize}
+
+\begin{itemize}
+    \item The program GUI contains:
+    \begin{itemize}
+        \item Two tabs: Interpolation and Approximation, each with a drawing area.
+        \item Data manipulation area with buttons to do the following:
+            \begin{itemize}
+                \item Load data (stock quotes) from a CSV-file.
+                \item Clear the data.
+                \item Reset the drawing area (only up to 5 graphs can be shown simultaneously).
+                \item Show some information about the data.
+                \item Clear the area with that information.
+            \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\end{document}
